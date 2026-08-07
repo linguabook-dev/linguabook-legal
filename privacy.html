@@ -15,6 +15,8 @@
   h2 { font-size: 1.15rem; margin-top: 32px; }
   .updated { color: #666; font-size: 0.9rem; margin-bottom: 8px; }
   a { color: #2563eb; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
   @media (prefers-color-scheme: dark) {
     body { color: #e5e5e5; background: #0f0f1e; }
     .updated { color: #999; }
@@ -24,33 +26,67 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="updated">LinguaBook · Last updated: July 2026</p>
+  <p class="updated">LinguaBook · Last updated: August 2026</p>
 
-  <p>LinguaBook respects your privacy. The app is designed to work without collecting personal data that identifies you.</p>
+  <p>LinguaBook is a book reader. Most of what it does happens entirely on your device, and you can use it without an account. Two optional features do send data to our servers: creating an account, and backing up your library. This policy sets out exactly what those involve.</p>
 
-  <h2>1. Data stored on your device</h2>
-  <p>Your imported books, reading progress and settings (language, font, theme, tutorial state) are saved only on your device. We do not operate a server and we receive none of this data. Since there is no account and no server-side storage, uninstalling the app permanently deletes all of this data.</p>
-  <p>To let you add books that are already stored on your device, the app can scan your device storage for EPUB files. This scan happens entirely on your device; the list of files found never leaves your phone and is not sent to us or to anyone else.</p>
+  <h2>1. What stays on your device</h2>
+  <p>Your imported books, your reading progress, and your settings (language, font, theme, tutorial state) are stored on your device. Unless you turn on Backup and sync, none of it reaches us.</p>
 
-  <h2>2. Translation</h2>
-  <p>When you select a word or sentence to translate, that text is sent to the Google Translate service to obtain the translation. No data that identifies you is attached to the request. Use of this service is governed by Google's privacy policy.</p>
+  <h2>2. Your account (optional)</h2>
+  <p>LinguaBook can be used without an account. One is required only for Backup and sync, which is part of the Premium features.</p>
+  <p>Sign-in is handled by Firebase Authentication using Google Sign-In or Sign in with Apple. We never see or receive your password. From the sign-in provider we receive:</p>
+  <ul>
+    <li>your email address;</li>
+    <li>a unique account identifier;</li>
+    <li>the address of your profile picture, when the provider supplies one.</li>
+  </ul>
+  <p>The email address is used to identify your account and to tell you which account a purchase belongs to. The profile picture is displayed in the app so you can see which account is connected; it is loaded directly from the provider and is not copied to our servers.</p>
 
-  <h2>3. Purchases and subscriptions</h2>
-  <p>When you buy the Premium upgrade or subscribe, the purchase is processed entirely by your app store (Google Play or the Apple App Store). We receive only confirmation that a valid purchase exists so the app can unlock Premium. We never receive or store your name, card number or other payment details.</p>
+  <h2>3. Backup and sync (optional)</h2>
+  <p>When you enable this feature, the following is stored on our servers:</p>
+  <ul>
+    <li>the EPUB files you choose to back up;</li>
+    <li>any custom font files you have imported;</li>
+    <li>your app settings, your library catalogue, and your reading positions.</li>
+  </ul>
+  <p>This data is tied to your account and accessible to you alone. Access is enforced on the server side, not merely in the app. Each account may store up to 500&nbsp;MB.</p>
+  <p>You can remove all of it at any time from the app: <em>Account → Delete backup</em> removes the data and keeps your account; <em>Account → Delete my account</em> removes both.</p>
 
-  <h2>4. Suggestions and bug reports</h2>
+  <h2>4. Purchases</h2>
+  <p>When you buy Premium, the app store issues a purchase receipt. The app sends that receipt to our server, which checks it directly with Google Play and records the purchase token, the product identifier, your account identifier, and the expiry date. This is what lets us grant access to Backup and sync, and what prevents a single purchase from being used across several accounts.</p>
+  <p>All payments are processed by the app store (Google Play or the Apple App Store). <strong>We never receive or store your payment details.</strong></p>
+
+  <h2>5. Translation</h2>
+  <p>When you select a word or sentence to translate, that text is sent to Google's translation service to obtain the translation. No data identifying you is attached to the request. If you download an offline language, translation then happens entirely on your device and nothing is sent anywhere.</p>
+
+  <h2>6. Protecting the service</h2>
+  <p>Requests to our servers are checked with Firebase App Check (Play Integrity on Android, App Attest on iOS). This confirms that a request comes from a genuine copy of the app rather than from a script, and protects the service from abuse. It is handled by Google and involves no personal data about you.</p>
+
+  <h2>7. Suggestions and bug reports</h2>
   <p>If you contact us through the in-app feedback form, the content of your message is transmitted through the Formspree service so that it reaches us. Please do not include sensitive personal information in your message.</p>
 
-  <h2>5. No ads, no tracking</h2>
-  <p>The app shows no advertising and uses no analytics or tracking tools.</p>
+  <h2>8. No ads, no tracking</h2>
+  <p>The app shows no advertising and uses no analytics or tracking tools. We do not build profiles, and we do not sell or share your data with anyone for advertising purposes.</p>
 
-  <h2>6. Children</h2>
-  <p>The app does not knowingly collect any data about children.</p>
+  <h2>9. Where your data is held</h2>
+  <p>Account data and backups are held on Google Cloud infrastructure operated through Firebase, on servers located in the United States. The processors we rely on are Google (Firebase, Google Play, translation) and Formspree (feedback messages only).</p>
 
-  <h2>7. Changes to this policy</h2>
+  <h2>10. How long we keep it</h2>
+  <p>Your backup is kept for as long as your account exists. Deleting it from the app removes it from our servers.</p>
+  <p>Records of a purchase are kept for as long as needed to honour that purchase and to meet accounting obligations, even after an account is deleted.</p>
+  <p><strong>Deleting your account does not cancel your subscription.</strong> A subscription is managed by the app store and must be cancelled there.</p>
+
+  <h2>11. Your rights</h2>
+  <p>You may access, correct, export or delete your data. Deletion and removal of your backup are available directly in the app, without having to ask us. For anything else, contact us using the details below and we will respond within one month.</p>
+
+  <h2>12. Children</h2>
+  <p>The app is not directed at children and does not knowingly collect any data about them.</p>
+
+  <h2>13. Changes to this policy</h2>
   <p>This policy may be updated from time to time. Any significant change will be reflected on this page with an updated date.</p>
 
-  <h2>8. Contact</h2>
+  <h2>14. Contact</h2>
   <p>If you have any questions about this policy, you can reach us through the contact form available in the LinguaBook app (Settings → Send feedback).</p>
 </body>
 </html>
